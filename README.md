@@ -44,7 +44,7 @@ The app supports loading story data from a remote JSON source.
 By default, `app.js` includes a placeholder URL for a GitHub raw JSON file. Update the URL in `CONFIG.remoteStoreUrl` and in `CONFIG.storeOptions` to point to your own repository:
 
 ```js
-'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/stories.json'
+'https://raw.githubusercontent.com/idawud/hakeem/main/stories.json'
 ```
 
 This allows the app to load stories remotely, but note that GitHub raw content is read-only from the browser.
@@ -87,7 +87,7 @@ Each story should use the same schema as the sample entries.
 
 1. Push the repository to GitHub.
 2. In your GitHub repo settings, enable GitHub Pages from the `main` branch using the root folder.
-3. Your app will be available at `https://YOUR_USERNAME.github.io/YOUR_REPO/`.
+3. Your app will be available at `https://idawud.github.io/hakeem/`.
 
 ## Notes
 
