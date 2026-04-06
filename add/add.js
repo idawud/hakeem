@@ -3,6 +3,10 @@ const DRAFT_STORAGE_KEY = 'hakeem_draft_stories';
 const JSONBIN_BIN_ID_KEY = 'jsonbin_bin_id';
 const JSONBIN_API_KEY_KEY = 'jsonbin_api_key';
 
+// Environment variables (injected during build or available in Node.js)
+const ENV_BIN_ID = typeof process !== 'undefined' && process.env ? process.env.JSONBIN_BIN_ID : null;
+const ENV_API_KEY = typeof process !== 'undefined' && process.env ? process.env.JSONBIN_API_KEY : null;
+
 const themeToggle = document.getElementById('theme-toggle');
 const form = document.getElementById('raw-json-form');
 const result = document.getElementById('json-result');
@@ -14,17 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const configSection = document.createElement('div');
   configSection.className = 'field-group';
   configSection.innerHTML = `
-    <label for="jsonbin-bin-id">JSONBin Bin ID (optional)</label>
-    <input id="jsonbin-bin-id" placeholder="Your JSONBin bin ID">
-    <label for="jsonbin-api-key">JSONBin API Key (optional)</label>
-    <input id="jsonbin-api-key" type="password" placeholder="Your JSONBin API key">
-    <small style="color: #b39564; font-size: 12px;">Leave empty to save locally only. Get keys from <a href="https://jsonbin.io" target="_blank" style="color: #f5c842;">jsonbin.io</a></small>
+    <label for="jsonbin-bin-id">JSONBin Bin ID</label>
+    <input id="jsonbin-bin-id" placeholder="Your JSONBin bin ID" value="${ENV_BIN_ID || ''}">
+    <label for="jsonbin-api-key">JSONBin API Key</label>
+    <input id="jsonbin-api-key" type="password" placeholder="Your JSONBin API key" value="${ENV_API_KEY || ''}">
+    <small style="color: #b39564; font-size: 12px;">Get keys from <a href="https://jsonbin.io" target="_blank" style="color: #f5c842;">jsonbin.io</a>. Values are saved locally.</small>
   `;
   form.insertBefore(configSection, form.lastElementChild);
 
-  // Load saved values
-  document.getElementById('jsonbin-bin-id').value = localStorage.getItem(JSONBIN_BIN_ID_KEY) || '';
-  document.getElementById('jsonbin-api-key').value = localStorage.getItem(JSONBIN_API_KEY_KEY) || '';
+  // Load saved values (override environment variables if user has saved custom ones)
+  const savedBinId = localStorage.getItem(JSONBIN_BIN_ID_KEY);
+  const savedApiKey = localStorage.getItem(JSONBIN_API_KEY_KEY);
+
+  if (savedBinId) document.getElementById('jsonbin-bin-id').value = savedBinId;
+  if (savedApiKey) document.getElementById('jsonbin-api-key').value = savedApiKey;
 });
 
 function setTheme(theme) {

@@ -35,6 +35,19 @@ Then open:
 http://localhost:8000
 ```
 
+### Environment Variables (Optional)
+
+For local development with JSONBin, create a `.env` file in the project root:
+
+```env
+JSONBIN_BIN_ID=your_bin_id_here
+JSONBIN_API_KEY=your_api_key_here
+```
+
+The app will automatically load these values into the add page form. For security, never commit `.env` files to version control.
+
+If you don't set environment variables, you can manually enter the JSONBin credentials in the `/add/` page.
+
 ## Remote store configuration
 
 The app supports loading story data from a remote JSON source.
@@ -85,12 +98,31 @@ Each story should use the same schema as the sample entries.
 
 ## Deploy to GitHub Pages
 
-1. Push the repository to GitHub.
-2. In your GitHub repo settings, enable GitHub Pages from the `main` branch using the root folder.
-3. Your app will be available at `https://idawud.github.io/hakeem/`.
+### Automatic Deployment
 
-## Notes
+1. Push this repository to GitHub (already done).
+2. Go to your repository settings.
+3. Scroll down to "Pages" section.
+4. Under "Source", select "Deploy from a branch".
+5. Choose `main` branch and `/ (root)` folder.
+6. Click "Save".
 
-- For the app to work on GitHub Pages, keep `stories.json` in the repo root or update the URL accordingly.
-- If you choose to use GitHub raw as the remote source, remember that updates are done by pushing to the repository.
-- The app will automatically fall back to the bundled local store if the remote source fails.
+Your app will be available at: `https://idawud.github.io/hakeem/`
+
+### Manual Deployment (Alternative)
+
+If you prefer to deploy from a `docs/` folder:
+
+1. Create a `docs/` folder in your repository.
+2. Copy all files (except `.env`, `.gitignore`, and development files) to `docs/`.
+3. In repository settings → Pages, select `main` branch and `/docs` folder.
+
+### Environment Variables in Production
+
+For production deployment, JSONBin credentials are entered manually in the `/add/` page. The app saves them securely in browser localStorage.
+
+If you want to inject environment variables during build:
+
+1. Use GitHub Actions with repository secrets
+2. Create a build workflow that injects the variables into the HTML/JS
+3. Or use a static site generator that supports environment variables
