@@ -1,0 +1,50 @@
+1. Create
+url - https://api.jsonbin.io/v3 
+Route - /b
+Request Type - POST
+Request Headers
+Below are the list of Accepted Request Headers if you are trying to Create a JSON record.
+
+Request Header	Value	Required
+Content-Type	application/json	Yes
+X-Master-Key	<API_KEY>	Yes 
+X-Access-Key	<ACCESS_KEY>	Yes 
+X-Bin-Private	<true / false> 	No
+X-Bin-Name	<BIN_NAME> 	No
+X-Collection-Id	<COLLECTION_ID>	No
+
+
+2. 
+url - https://api.jsonbin.io/v3 
+Route - /b/<BIN_ID> 
+Read a specific Bin Version
+/b/<BIN_ID>/<BIN_VERSION> 
+Disable Meta Data using Query Parameter instead of X-Bin-Meta header
+/b/<BIN_ID>?meta=false 
+
+/b/<BIN_ID>/latest 
+Info Using /latest will always return the latest version of the bin.
+
+Request Type - GET
+Request Headers
+Below are the list of Accepted Request Headers if you are trying to Read a JSON record.
+
+Request Header	Value	Required
+X-Master-Key	<API_KEY>	Yes 
+X-Access-Key	<ACCESS_KEY>	Yes 
+X-Bin-Meta	<true / false> 	No
+X-JSON-Path	<JSON_ACCESSOR>	No
+
+3. Update
+url - https://api.jsonbin.io/v3 
+Route - /b/<BIN_ID> 
+
+Request Type - PUT
+Request Headers
+Below are the list of Accepted Request Headers if you are trying to Update a JSON record.
+
+Request Header	Value	Required
+Content-Type	application/json	Yes
+X-Master-Key	<API_KEY>	Yes 
+X-Access-Key	<ACCESS_KEY>	Yes 
+X-Bin-Versioning	<true / false> 	No
