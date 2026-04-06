@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakeem Stories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <a href="index.html" class="home-link">
+        <div class="stars">✦ ✦ ✦</div>
+        <div class="app-title">Stories for Hakeem</div>
+        <div class="app-sub">Ghanaian · Islamic · British · STEM</div>
+      </a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <div class="main-grid">
+      <aside class="side-panel">
+        <div class="panel-section">
+          <div class="panel-label">Store Source</div>
+          <select id="store-select" class="select-input"></select>
+        </div>
+
+        <div class="panel-section">
+          <div class="panel-label">Day / Night</div>
+          <div class="toggle-row" id="time-toggle"></div>
+        </div>
+
+        <div class="panel-section">
+          <div class="panel-label">Age category</div>
+          <div class="age-list" id="age-filter"></div>
+        </div>
+
+        <div class="panel-section small">
+          <div class="panel-label">Recently read</div>
+          <div id="read-count">0 stories</div>
+        </div>
+
+        <div class="panel-section panel-action">
+          <button id="show-add-page" class="action-button">+ Add a story</button>
+        </div>
+
+        <div class="panel-note" id="store-note"></div>
+      </aside>
+
+      <section class="content" id="content-area">
+        <div class="page-header">
+          <div>
+            <div class="page-title" id="page-title">Morning stories for 0–3 months</div>
+            <div class="page-sub" id="page-sub">Stories load from the selected source and remember what you read.</div>
+          </div>
+          <div id="status-banner" class="status-banner hidden"></div>
+        </div>
+
+        <div id="story-page">
+          <div id="story-list" class="story-list"></div>
+        </div>
+
+        <div id="add-page" class="add-page hidden"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="reader-overlay" id="reader-overlay">
+    <div class="reader-header">
+      <button class="back-btn" id="close-reader">← Back</button>
+      <span class="reader-time-badge" id="reader-badge">Morning story</span>
+    </div>
+    <div class="reader-body" id="reader-body"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

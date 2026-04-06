@@ -1,0 +1,96 @@
+{
+  "stories": [
+    {
+      "id": "month-2-morning",
+      "title": "Morning Light for Baby Hakeem",
+      "timeOfDay": "Morning",
+      "age": "0-3months",
+      "coverImage": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=800",
+      "tags": ["Curiosity", "Kindness", "Islamic Value", "STEM"],
+      "preview": "A gentle morning story about listening, gratitude, and tiny wonders.",
+      "icon": "🌞",
+      "content": [
+        "The morning sky is soft and full of light, like a blanket woven with gold.",
+        "Baby Hakeem opens his eyes and hears the birds say, 'Bismillah' in their own bright way.",
+        "His mother smiles and says, 'Alhamdulillah' as she places his little hand on her heart.",
+        "In the garden, a caterpillar walks slowly. Hakeem watches and wonders: how does it move? How does it know where to go?",
+        "That is curiosity. Curiosity is the way we learn about Allah's beautiful creation."
+      ],
+      "lesson": "Good mornings begin with thankfulness, gentle curiosity, and a heart that notices small wonders.",
+      "dua": {
+        "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ",
+        "transliteration": "Rabbi awzi'ni an ashkura ni'mataka",
+        "translation": "My Lord, enable me to be grateful for Your favour."
+      }
+    },
+    {
+      "id": "month-4-evening",
+      "title": "The Evening Prayer and the Quiet Star",
+      "timeOfDay": "Evening",
+      "age": "3-6months",
+      "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=800",
+      "tags": ["Islamic Value", "Kindness", "British"],
+      "preview": "A calm evening story about thanking Allah and feeling safe under the stars.",
+      "icon": "🌙",
+      "content": [
+        "The sky grows dark above the little house in Kumasi and the street lamps glow softly.",
+        "Baby Hakeem's family gathers to say their prayer together. His grandmother hums a quiet song.",
+        "She says, 'Every star is a promise from Allah. Every quiet breath is blessing.'",
+        "Hakeem thinks about the star he saw through the window when he woke from his nap.",
+        "Even when we are small, Allah hears us. Even when we are quiet, Allah is near."
+      ],
+      "lesson": "Evening is a time to remember Allah, to feel thankful, and to know that safety can be calm and gentle.",
+      "dua": {
+        "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ",
+        "transliteration": "Allahumma inni as'aluka al-'afwa wal-'afiyah",
+        "translation": "O Allah, I ask You for pardon and wellbeing."
+      }
+    },
+    {
+      "id": "month-6-morning",
+      "title": "Kwame's New Friend in London",
+      "timeOfDay": "Morning",
+      "age": "3-6months",
+      "coverImage": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=800",
+      "tags": ["Ghanaian", "British", "Kindness"],
+      "preview": "A story about new places, friendly voices, and being proud of home.",
+      "icon": "🦋",
+      "content": [
+        "Kwame walks through a green park in London. The air feels different from Accra, but the birds still sing.",
+        "He remembers how his grandfather drums at home. He remembers how his mother says, 'Your name is strong.'",
+        "A boy named Marcus waves and says, 'Good morning.' Kwame replies with a smile.",
+        "In the quiet of the park, Kwame learns that kindness can cross any country.",
+        "He feels grateful and says, 'Alhamdulillah' for a new friend and a new morning."
+      ],
+      "lesson": "Being kind and proud of your family helps you feel at home wherever you go.",
+      "dua": {
+        "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي",
+        "transliteration": "Rabbi ishrah li sadri wa yassir li amri",
+        "translation": "My Lord, expand my chest and ease my affairs."
+      }
+    },
+    {
+      "id": "month-8-evening",
+      "title": "The Prayer Mat from Kumasi",
+      "timeOfDay": "Evening",
+      "age": "6-9months",
+      "coverImage": "https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&q=80&w=800",
+      "tags": ["Islamic Value", "British", "Ghanaian"],
+      "preview": "Grandma teaches Ibrahim why prayer is a warm home inside the heart.",
+      "icon": "🕊️",
+      "content": [
+        "Ibrahim opens the quilted prayer mat that came from Kumasi. It smells like spices and home.",
+        "His grandma says, 'This mat remembers every prayer my feet touched. It remembers the rain and the mud.'",
+        "He closes his eyes and hears the soft hush of the room. The prayer mat makes the moment feel safe.",
+        "Grandma whispers, 'Allah listens no matter where you are. That is why prayer is easy when you trust Him.'",
+        "Ibrahim feels calm as the evening settles. He whispers his own thanks, and his heart feels like the mat — warm and steady."
+      ],
+      "lesson": "Prayer connects you to Allah even when the world around you changes.",
+      "dua": {
+        "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ",
+        "transliteration": "Rabbi awzi'ni an ashkura ni'mataka",
+        "translation": "My Lord, enable me to be grateful for Your favour."
+      }
+    }
+  ]
+}

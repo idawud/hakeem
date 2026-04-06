@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Stories | Hakeem Stories</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <a href="../index.html" class="home-link">
+        <div class="stars">✦ ✦ ✦</div>
+        <div class="app-title">Stories for Hakeem</div>
+        <div class="app-sub">Ghanaian · Islamic · British · STEM</div>
+      </a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main class="content">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Add raw stories JSON</div>
+          <div class="page-sub">Paste a stories array in JSON format and validate it.</div>
+        </div>
+      </div>
+
+      <div class="story-list">
+        <form id="raw-json-form" class="add-form">
+          <div class="field-group">
+            <label for="raw-json-input">Raw stories JSON</label>
+            <textarea id="raw-json-input" class="add-text" placeholder='[ {"id":"month-3-morning","title":"..."} ]' required></textarea>
+          </div>
+          <div class="field-group">
+            <button type="submit" class="action-button">Validate JSON</button>
+          </div>
+        </form>
+
+        <div class="add-box">
+          <div class="lesson-label">Validation result</div>
+          <div id="json-result" class="add-preview">Paste a JSON array of stories and press validate.</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../add.js"></script>
+</body>
+
+</html>
